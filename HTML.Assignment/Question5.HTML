@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            max-width: 60%;
+            /* Allows form to adjust with screen size */
+            background-color: aqua;
+            padding: 10px;
+        }
+
+        table {
+            font-size: 14px;
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            font-weight: bold;
+            border-radius: 25px;
+        }
+
+        input[type="submit"] {
+            width: 50%;
+            padding: 5px;
+            margin: 20px;
+            background-color: rgb(222, 39, 10);
+            color: white;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+
+        .title {
+            font-size: 20px;
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-underline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="/action.php" method="post">
+        <table cellspacing="3" cellpadding="7" width="50%">
+            <tr>
+
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="title">
+                            Registration
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 17px;" colspan="3"> Personal Details</td>
+                    </tr>
+                    <td>
+                        Full Name <br>
+                        <input type="text" name="full_name" id="f1" placeholder="Enter Your Name" pattern="[a-zA-Z]+"
+                            title="please Enter your name">
+                    </td>
+                    <td>
+                        Father Name <br>
+                        <input type="text" name="father_name" id="f2" placeholder="Enter  father Name"
+                            pattern="[a-zA-Z]+" title="please Enter father name">
+                    </td>
+                    <td>
+                        Mother Name <br>
+                        <input type="text" name="mother_name" id="f2" placeholder="Enter  Mother Name"
+                            pattern="[a-zA-Z]+" title="please Enter mother name">
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    Date of Birth <br>
+                    <input type="input" placeholder="Enter Your DOB">
+                </td>
+                <td>
+                    Full Name <br>
+                    <input type="text" name="full_name" id="f1" placeholder="Enter Your Name" pattern="[a-zA-Z]+"
+                        title="please Enter your name">
+                </td>
+                <td>
+                    Email <br>
+                    <input type="email" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mobile Number <br>
+                    <input type="text" placeholder="Enter mobile number" pattern="[a-zA-Z]+">
+                </td>
+                <td>
+                    Gender <br>
+                    <input type="text" placeholder="Enter your Gender">
+                </td>
+                <td>
+                    Address <br>
+                    <input type="text" placeholder="Enter your address">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <hr width="400px" style="float: left;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size: 17px;"> Other Details</td>
+            </tr>
+            <tr>
+                <td>
+                    stream <br>
+                    <input type="text" placeholder="Enter Your stream">
+                </td>
+                <td>
+                    Previous Class <br>
+                    <input type="text" placeholder="Enter Your Previous class">
+                </td>
+                <td>
+                    Hobbies <br>
+                    <input type="text" placeholder="Enter Your hobbies">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Account Number <br>
+                    <input type="text" pattern="[0-9]" placeholder="Enter Your Account number">
+                </td>
+                <td>
+                    Religion <br>
+                    <input type="text" placeholder="Enter Your religion">
+                </td>
+                <td>
+                    Category <br>
+                    <input type="text" placeholder="Enter Your category">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+         table {
+            font-size: 18px;
+            margin: 0 auto;
+            width: 60%;
+        }
+        td {
+            padding: 8px;
+        }
+        th {
+            font-size: 30px;
+            color: red;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    </style> 
+</head>
+<body>
+    <form action="/action.php" method="post">
+        <table cellspacing="9" cellpadding="4">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <img src="../wd6.png" alt="staff logo" height="100px" width="200px">
+                        Employee Registration Form
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- Gender Selection -->
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        Mr. <input type="radio" name="gender" id="a1" checked>
+                        Mrs. <input type="radio" name="gender" id="a2">
+                        Ms. <input type="radio" name="gender" id="a3">
+                    </td>
+                </tr>
+
+                <!-- First Name -->
+                <tr>
+                    <td><label for="firstName">First Name:</label></td>
+                    <td><input type="text" id="firstName" name="firstName" placeholder="First Name" required pattern="[a-zA-Z]+" /></td>
+                </tr>
+
+                <!-- Last Name -->
+                <tr>
+                    <td><label for="lastName">Last Name:</label></td>
+                    <td><input type="text" id="lastName" name="lastName" placeholder="Last Name" required pattern="[a-zA-Z]+" /></td>
+                </tr>
+                 <tr>
+                    <td>
+                        Gender <br>
+                       <td><input type="text" placeholder="Enter your Gender"></td>
+                    </td>
+                 </tr>
+                
+
+                <!-- Mail Address 1 -->
+                <tr>
+                    <td><label for="mail1">Mail Address 1:</label></td>
+                    <td><input type="email" id="mail1" name="mail1" required /></td>
+                </tr>
+
+                <!-- Mail Address 2 -->
+                <tr>
+                    <td><label for="mail2">Mail Address 2:</label></td>
+                    <td><input type="email" id="mail2" name="mail2" required /></td>
+                </tr>
+
+                <!-- State -->
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td>
+                        <select name="state" id="state" required>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Gujarat" selected>Gujarat</option>
+                            <option value="Maharastra">Maharashtra</option>
+                            <option value="Panjab">Punjab</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Zip Code -->
+                <tr>
+                    <td><label for="zip">Zip:</label></td>
+                    <td><input type="number" id="zip" name="zip" placeholder="Zip Code" required pattern="[0-9]{6}" /></td>
+                </tr>
+
+                <!-- Upload Photo -->
+                <tr>
+                    <td><label for="photo">Upload Photo:</label></td>
+                    <td><input type="file" id="photo" name="photo" multiple /></td>
+                </tr>
+
+                <!-- E-Mail -->
+                <tr>
+                    <td><label for="email">E-Mail:</label></td>
+                    <td><input type="email" id="email" name="email" required /></td>
+                </tr>
+
+                <!-- Mobile Number -->
+                <tr>
+                    <td><label for="mobile">Mobile:</label></td>
+                    <td><input type="number" id="mobile" name="mobile" placeholder="+91" required pattern="[0-9]{10}" /></td>
+                </tr>
+
+                <!-- Languages Known -->
+                <tr>
+                    <td><label for="languages">Languages Known:</label></td>
+                    <td>
+                        <input type="checkbox" name="languages" value="Gujarati" checked> Gujarati<br>
+                        <input type="checkbox" name="languages" value="Hindi" checked> Hindi<br>
+                        <input type="checkbox" name="languages" value="English" checked> English<br>
+                        <input type="checkbox" name="languages" value="Marathi" > Marathi<br>
+                    </td>
+                </tr>
+
+                <!-- Additional Information -->
+                <tr>
+                    <td><label for="additionalInfo">Additional Information:</label></td>
+                    <td><textarea id="additionalInfo" name="additionalInfo" cols="28" rows="8"></textarea></td>
+                </tr>
+
+                <!-- Submit and Reset Buttons -->
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
